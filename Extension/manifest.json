@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "URL Viewer",
+    "version": "1.0",
+    "description": "Displays the current URL of the active tab.",
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "tabs",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking",
+    "webNavigation"
+    ],    
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
+
+
